@@ -1,5 +1,6 @@
 import React from 'react'
 import logo  from '../../../assets/images/logo.png'
+import {Link} from 'react-router-dom'
 export default function Header() {
   return (
     <div>
@@ -9,11 +10,11 @@ export default function Header() {
 
         </div>
         <div className="navbar"></div>
-        <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/">about</a></li>
-            <li><a href="/">contact</a></li>
-        </ul>
+        <Link to="/">Home</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Blog">Blog</Link>
+        
+            
       </div>
     </div>
   )
